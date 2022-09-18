@@ -6,8 +6,16 @@ Bismillah
 
 <h1>My First JavaScript Workshop</h1>
 
+<script>
+function myFunction() {
+  document.getElementById('demo').innerHTML = Date();
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+onclick="myFunction">
 Click me to display Date and Time.</button>
 
 <p id="demo"></p>
